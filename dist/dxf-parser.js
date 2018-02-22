@@ -1291,7 +1291,7 @@ EntityParser.prototype.parseEntity = function(scanner, curr) {
                 curr = scanner.lastReadGroup;
                 break;
             default:
-                checkCommonEntityProperties(entity);
+                helpers.checkCommonEntityProperties(entity, curr);
                 break;
         }
         curr = scanner.next();
